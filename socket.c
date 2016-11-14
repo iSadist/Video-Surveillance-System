@@ -6,10 +6,6 @@ void open_socket(int * socketfd, int portno)
 {
 	int stream_sockfd;
 	socklen_t clilen; 
-	time_t raw_time;
-	struct tm * time_info;
-	char client_IP[INET_ADDRSTRLEN];
-	pthread_t input_reader_thread;
 	struct sockaddr_in serv_addr, cli_addr;
 
 	pthread_mutex_lock(&mutex);
