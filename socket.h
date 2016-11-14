@@ -24,12 +24,13 @@ extern "C" {
 #include <arpa/inet.h>
 #include <pthread.h>
 #include <time.h>
+#include <stddef.h>
+#include <errno.h>
 #include <pthread.h>
 
 #define SOCKET_INACTIVE			-1
 #define PORT_WEB				8088
-#define PORT_STERAM				9090
-
+#define PORT_STREAM				9090
 
 void open_jpeg_socket(void);
 void open_web_socket(void);
