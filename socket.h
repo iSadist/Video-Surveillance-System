@@ -32,6 +32,9 @@ extern "C" {
 #define PORT_WEB				8088
 #define PORT_STREAM				9090
 
+int jpeg_socket = SOCKET_INACTIVE;
+int web_socket = SOCKET_INACTIVE;
+
 void open_jpeg_socket(void);
 void open_web_socket(void);
 void close_jpeg_socket(void);

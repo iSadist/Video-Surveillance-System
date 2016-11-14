@@ -1,8 +1,5 @@
 #include "socket.h"
 
-int jpeg_socket = SOCKET_INACTIVE;
-int web_socket = SOCKET_INACTIVE;
-
 pthread_mutex_t mutex;
 
 void open_socket(int * socketfd, int portno)
